@@ -137,6 +137,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.configstore@1.0-service
 
+# Camera
+PRODUCT_PACKAGES += \
+    libshims_libui
+
 # Consumer IR
 PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \

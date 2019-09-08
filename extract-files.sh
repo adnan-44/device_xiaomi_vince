@@ -102,3 +102,5 @@ if [ "$DEVICE" = "mido" ]; then
 fi
 
 "$MY_DIR"/setup-makefiles.sh
+
+"${PATCHELF}" --replace-needed "libui.so" "libshims_libui.so" "$DEVICE_BLOB_ROOT/vendor/lib/hw/camera.msm8953.so"
