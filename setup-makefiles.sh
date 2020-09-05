@@ -17,7 +17,11 @@
 #
 
 set -e
+export DEVICE=vince
+export DEVICE_COMMON=msm8953-common
+export VENDOR=xiaomi
 
+export DEVICE_BRINGUP_YEAR=2018
 INITIAL_COPYRIGHT_YEAR=2017
 
 # Load extract_utils and do some sanity checks
