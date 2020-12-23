@@ -104,3 +104,5 @@ fi
 "$MY_DIR"/setup-makefiles.sh
 
 "${PATCHELF}" --replace-needed "libui.so" "libshims_libui.so" "$DEVICE_BLOB_ROOT/vendor/lib/hw/camera.msm8953.so"
+
+"${PATCHELF}" --add-needed "android.frameworks.sensorservice@1.0-v27.so" "$DEVICE_BLOB_ROOT/vendor/lib/libvidhance_gyro.so"
