@@ -108,16 +108,6 @@ TARGET_PROCESS_SDK_VERSION_OVERRIDE := \
 # Crypto
 TARGET_HW_DISK_ENCRYPTION := true
 
-# Dexpreopt
-ifeq ($(HOST_OS),linux)
-  ifneq ($(TARGET_BUILD_VARIANT),eng)
-    ifeq ($(WITH_DEXPREOPT),)
-      WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY := false
-      WITH_DEXPREOPT := true
-    endif
-  endif
-endif
-
 # Display
 TARGET_SCREEN_DENSITY := 480
 TARGET_USES_ION := true
