@@ -978,11 +978,6 @@ vendor/lib/libvqzip.so|867bc963c94e6812cc4d3a7fe093c3383557bcb9
 etc/firmware/novatek_ts_fw.bin:vendor/firmware/novatek_ts_fw.bin|12f7299c9148dbacf960bd8d835ddfca8f882a8e
 
 # Perf - from LA.UM.8.6.r1-04400-89xx.0
-product/lib/vendor.qti.hardware.perf@1.0.so|b4969fa797d1957ad8f35d4f84615608f0e9cc2e
-product/lib/vendor.qti.hardware.perf@2.0.so|71592601eed5e022f4979293d68deb98e688a3d4
-product/lib/vendor.qti.hardware.perf@2.1.so|d8241e46de9fe70d381bbacbe9f8d1e9615b336b
-product/lib64/vendor.qti.hardware.perf@1.0.so|8858021553ea41933cdaaa4a68e9d4d15609db46
-product/lib64/vendor.qti.hardware.perf@2.0.so|9353709cc2e2af8c4edd3967b5362ede79a72805
 vendor/bin/energy-awareness|def07e366347c7f0a7778b748acb49557ab21d2a
 vendor/bin/msm_irqbalance|b5e55b4b0934b65b7dd5d2201f9a70f6f77a4e7c
 vendor/bin/hw/vendor.qti.hardware.perf@2.0-service|6e45f0e5ee264d6b272daf50481770bf013b602e
