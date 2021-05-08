@@ -80,7 +80,28 @@ function blob_fixup() {
 	case "${1}" in
 
 	product/lib64/libdpmframework.so)
-	patchelf --add-needed libdpmframework_shim.so "${2}"
+	    "${PATCHELF}" --add-needed libdpmframework_shim.so "${2}"
+	;;
+	vendor/lib/hw/camera.msm8953.so)
+	    "${PATCHELF}" --remove-needed "libandroid.so" "${2}"
+	;;
+        vendor/lib/libFaceGrade.so)
+	    "${PATCHELF}" --remove-needed "libandroid.so" "${2}"
+	;;
+	vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so)
+	    "${PATCHELF_0_8}" --remove-needed "libprotobuf-cpp-lite.so" "${2}"
+	;;
+	vendor/lib/libmmcamera_ppeiscore.so)
+	    "${PATCHELF}" --add-needed libmmcamera_ppeiscore_shim.so  "${DEVICE_BLOB_ROOT}"/vendor/lib/libmmcamera_ppeiscore.so
+	;;
+	vendor/lib/libmmcamera2_iface_modules.so)
+	    # Always set 0 (Off) as CDS mode in iface_util_set_cds_mode
+	    sed -i -e 's|\x1d\xb3\x20\x68|\x1d\xb3\x00\x20|g' "${2}"
+	    PATTERN_FOUND=$(hexdump -ve '1/1 "%.2x"' "${2}" | grep -E -o "1db30020" | wc -l)
+	    if [ $PATTERN_FOUND != "1" ]; then
+	        echo "Critical blob modification weren't applied on ${2}!"
+	        exit;
+	    fi
 	;;
 	esac
 
