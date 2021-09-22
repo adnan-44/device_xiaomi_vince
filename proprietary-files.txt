@@ -871,8 +871,6 @@ vendor/lib64/libgnsspps.so|a936f15ea4ebe8f705300747c6ecc8150a0584e1
 vendor/lib64/libgps.utils.so|6bfea36a114fd5c13575abb4a315d53e7ac9bd49
 
 # Graphics - from LA.UM.8.6.r1-04400-89xx.0
-lib/libsdm-disp-apis.so:vendor/lib/libsdm-disp-apis.so|5b006423286008ba9b54b8c29e9ce2ab4b6fa14d
-lib64/libsdm-disp-apis.so:vendor/lib64/libsdm-disp-apis.so|25391818f65a4dfe3fdf0603109eacc4eedc4c13
 vendor/lib/egl/eglSubDriverAndroid.so|d0f0f243aeb41720cbc052c2344918c5d588659c
 vendor/lib/egl/libEGL_adreno.so|677a2312488fe312a301170e70c701832a8bd89d
 vendor/lib/egl/libGLESv1_CM_adreno.so|17bbde3fd2a67234581be29370f45d12f91f1869
