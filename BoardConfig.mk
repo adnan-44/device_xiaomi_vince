@@ -44,8 +44,6 @@ BUILD_BROKEN_VINTF_PRODUCT_COPY_FILES := true
 TARGET_BOARD_SUFFIX := _64
 TARGET_USES_64_BIT_BINDER := true
 
-TARGET_SYSTEM_PROP := $(DEVICE_PATH)/system.prop
-
 # Kernel
 TARGET_KERNEL_CONFIG := vince_defconfig
 BOARD_KERNEL_BASE := 0x80000000
@@ -176,6 +174,11 @@ TARGET_PER_MGR_ENABLED := true
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/sys/devices/platform/soc/78b7000.i2c/i2c-3/3-0020/input/input2/wake_gesture"
 TARGET_HAS_NO_POWER_STATS := true
+
+# Properties
+TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # Qualcomm
 BOARD_USES_QCOM_HARDWARE := true
