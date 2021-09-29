@@ -19,3 +19,9 @@ DEVICE_PROVISIONED=1
 # Set network mode to (T/L/G/W/1X/EVDO, T/L/G/W/1X/EVDO) for 7+7 mode device on DSDS mode
 #
 ro.telephony.default_network=22,22
+
+# Havoc
+ro.havoc.device.name=Xiaomi Redmi 5 Plus
+ro.havoc.group.url=https://t.me/havoc_vince
+ro.havoc.maintainer=Mohammed Adnan
+ro.havoc.maintainer.username=Addy0405
