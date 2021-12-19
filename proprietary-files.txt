@@ -1030,6 +1030,17 @@ vendor/lib64/libsecureui.so
 vendor/lib64/libsecureui_svcsock.so
 vendor/lib64/libssd.so
 
+# Fingerprint - vince
+etc/firmware/goodix_firmware.bin:vendor/firmware/goodix_firmware.bin
+vendor/lib64/hw/fingerprint.default.so
+lib64/hw/gf_fingerprint.default.so:vendor/lib64/hw/gf_fingerprint.default.so
+lib64/libgf_algo.so:vendor/lib64/libgf_algo.so
+lib64/libgf_ca.so:vendor/lib64/libgf_ca.so
+lib64/libgf_hal.so:vendor/lib64/libgf_hal.so
+lib64/libgoodixfingerprintd_binder.so:vendor/lib64/libgoodixfingerprintd_binder.so
+vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so
+vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0.so
+
 # FM
 lib64/fm_helium.so
 lib64/libfm-hci.so
