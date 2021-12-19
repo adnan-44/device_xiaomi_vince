@@ -1,4 +1,5 @@
 # All unpinned blobs below are extracted from daisy-user 10 QKQ1.191002.002 V11.0.21.0.QDLMIXM release-keys
+# vince packages - vince-user 8.1.0 OPM1.171019.019 V11.0.2.0.OEGMIXM release-keys
 
 # ADSP
 vendor/bin/adsprpcd
@@ -68,6 +69,20 @@ etc/permissions/audiosphere.xml
 framework/audiosphere.jar
 vendor/lib/soundfx/libasphere.so
 vendor/lib64/soundfx/libasphere.so
+
+# Audio ACDB - vince
+vendor/etc/acdbdata/adsp_avs_config.acdb
+vendor/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb
+vendor/etc/acdbdata/QRD/QRD_General_cal.acdb
+vendor/etc/acdbdata/QRD/QRD_Global_cal.acdb
+vendor/etc/acdbdata/QRD/QRD_Handset_cal.acdb
+vendor/etc/acdbdata/QRD/QRD_Hdmi_cal.acdb
+vendor/etc/acdbdata/QRD/QRD_Headset_cal.acdb
+vendor/etc/acdbdata/QRD/QRD_Speaker_cal.acdb
+vendor/etc/acdbdata/QRD/QRD_workspaceFile.qwsp
+
+# Audio firmware - vince
+etc/firmware/tas2557_uCDSP.bin:vendor/firmware/tas2557_uCDSP.bin
 
 # ANT+ (vendor)
 vendor/lib64/com.qualcomm.qti.ant@1.0.so

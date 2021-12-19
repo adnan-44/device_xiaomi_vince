@@ -143,6 +143,9 @@ TARGET_USERIMAGES_USE_EXT4 := true
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
+# Security patch level
+VENDOR_SECURITY_PATCH := 2019-10-01
+
 # Treble
 PRODUCT_FULL_TREBLE_OVERRIDE := true
 BOARD_VNDK_VERSION := current
