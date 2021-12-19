@@ -984,6 +984,9 @@ vendor/lib64/libsysmon_cdsp_skel.so
 # Charger
 vendor/bin/hvdcp_opti
 
+# Consumer IR - vince
+vendor/lib64/hw/consumerir.default.so
+
 # DPM
 framework/tcmclient.jar
 product/bin/dpmd
