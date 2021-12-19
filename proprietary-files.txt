@@ -144,6 +144,12 @@ vendor/lib/libvidhance_gyro.so
 vendor/lib/libXMFD_AgeGender.so
 vendor/lib/lib_lowlight.so
 
+# Camera provider - vince
+vendor/lib/hw/android.hardware.camera.provider@2.4-impl.so
+vendor/lib/camera.device@1.0-impl.so:vendor/lib/camera.device@1.0-impl-v27.so
+vendor/lib/camera.device@3.2-impl.so:vendor/lib/camera.device@3.2-impl-v27.so
+vendor/lib/camera.device@3.3-impl.so:vendor/lib/camera.device@3.3-impl-v27.so
+
 # Camera-actuators - vince
 vendor/lib/libactuator_vince_dw9714v_ofilm.so
 vendor/lib/libactuator_vince_dw9763_sunny.so
