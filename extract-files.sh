@@ -56,6 +56,10 @@ fi
 
 function blob_fixup() {
     case "${1}" in
+        vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc)
+            sed -i 's/fps_hal/vendor.fps_hal/' "${2}"
+            sed -i 's/group.*/& uhid/' "${2}"
+            ;;
         product/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml|product/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml)
             sed -i 's/version="2.0"/version="1.0"/g' "${2}"
             ;;
@@ -72,6 +76,9 @@ function blob_fixup() {
             ;;
         vendor/lib64/libwvhidl.so)
             "${PATCHELF}" --replace-needed "libprotobuf-cpp-lite.so" "libprotobuf-cpp-lite-v29.so" "${2}"
+            ;;
+        vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so)
+            "${PATCHELF_0_8}" --remove-needed "libprotobuf-cpp-lite.so" "${2}"
             ;;
     esac
 }
