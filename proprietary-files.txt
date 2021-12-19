@@ -1511,6 +1511,9 @@ vendor/lib64/libsensor_reg.so
 vendor/lib64/libsensor_user_cal.so
 vendor/lib64/sensors.ssc.so
 
+# Sensors configs - vince
+vendor/etc/sensors/sensor_def_qcomdev.conf
+
 # Touchscreen firmware - vince
 etc/firmware/novatek_ts_fw.bin:vendor/firmware/novatek_ts_fw.bin
 
