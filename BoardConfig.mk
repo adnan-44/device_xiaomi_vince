@@ -185,10 +185,11 @@ BOARD_USES_QCOM_HARDWARE := true
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.recovery.qcom
 
 # RIL
-DISABLE_RILD_OEM_HOOK := true
+ENABLE_VENDOR_RIL_SERVICE := true
+TARGET_USES_OLD_MNC_FORMAT := true
 
 # Security patch level
-VENDOR_SECURITY_PATCH := 2020-08-01
+VENDOR_SECURITY_PATCH := 2021-07-05
 
 # SELinux
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
