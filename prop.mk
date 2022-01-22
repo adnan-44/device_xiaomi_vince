@@ -60,7 +60,6 @@ vendor.audio.feature.snd_mon.enable=true \
 vendor.audio.feature.compr_cap.enable=false \
 vendor.audio.feature.hifi_audio.enable=true \
 vendor.audio.feature.hdmi_edid.enable=true  \
-endor.audio.feature.spkr_prot.enable=true  \
 vendor.audio.feature.dsm_feedback.enable=false \
 vendor.audio.feature.ssrec.enable=true  \
 vendor.audio.feature.compr_voip.enable=true \
